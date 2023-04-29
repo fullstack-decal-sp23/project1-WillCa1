@@ -52,7 +52,7 @@ body {
 }
 
 #introduction .back-wrapper {
-    width: 500px; /* Set a larger width for the introduction section */
+    width: 500px;
     height: 100%;
     display: flex;
     flex-direction: column;
