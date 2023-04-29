@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Cai</title>
+    <meta name="author" content="Will Cai">
+    <link rel="icon" type="image/png" href="W.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-qnDcU6p3M6goNtimSLTf2M7ALbc6Iz+D7rIggGJldV7+u6x2QD7jKdAoeA6FbPySGpPGlVjcAizjg0MPA6uwmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="fullpage">
+        <section class="section full-page" id="introduction">
+            <div class="flip-container" onclick="toggleFlip(this)">
+                <div class="flipper">
+                    <div class="front">
+                        <h1>About</h1>
+                    </div>
+                    <div class="back">
+                        <div class="back-wrapper">
+                            <p>My name is Will Cai. I'm currently a sophomore at Berkeley studying Math and CS. I like playing chess, piano and video games. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section full-page" id="work">
+            <div class="flip-container" onclick="toggleFlip(this)">
+                <div class="flipper">
+                    <div class="front">
+                        <h1>Work</h1>
+                    </div>
+                    <div class="back">
+                        <a href="https://fullstack-decal-sp23.github.io/hw2-WillCa1/" class="button" onclick="event.stopPropagation();" target="_blank">
+                            <img src="globe.svg" alt="website" />
+                        </a>
+                        <a href="https://github.com/WillCa1?tab=repositories" class="button" onclick="event.stopPropagation();" target="_blank">
+                            <img src="github-icon.svg" alt="GitHub" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section full-page" id="contact">
+            <div class="flip-container" onclick="toggleFlip(this)">
+                <div class="flipper">
+                    <div class="front">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="back">
+                        <a href="mailto:willcaiai@gmail.com" class="button" onclick="event.stopPropagation();">
+                            <img src="email.svg" alt="email" />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100090499490066" class="button" onclick="event.stopPropagation();" target="_blank">
+                            <img src="facebook.svg" alt="facebook" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section full-page" id="prime-check">
+            <h2>Is this Number Prime?</h2>
+            <input type="number" id="number" placeholder="Enter a number" oninput="checkPrime()">
+            <p id="result"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
